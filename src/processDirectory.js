@@ -28,7 +28,7 @@ function processDirectory(strDirPath, strOutput, log, blSingleDirectory) {
 
       } else if (fs.lstatSync(strSource).isDirectory() && blSingleDirectory === false) {
 
-        processDirectory(strDirPath + s_dir + strFileName, strOutput + s_out + strFileName, log);
+        processDirectory(strDirPath + s_dir + strFileName, strOutput + s_out + strFileName, log, blSingleDirectory);
       }
     });
 
