@@ -1,0 +1,31 @@
+{
+  "name": "css-min-cmd",
+  "version": "1.0.0",
+  "description": "Minify css files and folders recursively",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dfajardodev/css-min-cmd.git"
+  },
+  "keywords": [
+    "minify",
+    "all",
+    "uglify",
+    "css",
+    "min",
+    "cli"
+  ],
+  "author": "David Fajardo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dfajardodev/css-min-cmd/issues"
+  },
+  "homepage": "https://github.com/dfajardodev/css-min-cmd#readme",
+  "dependencies": {
+    "yargs": "^16.2.0"
+  }
+}
