@@ -35,7 +35,7 @@ const argv = require("yargs")
   .describe("h", "show help info").argv;
 
 module.exports = {
-  log: argv.l,
+  log: argv.l !== undefined,
   file: argv.f,
   out_file: argv.of === undefined && argv.f !== undefined ? empty(argv.f, 'file') : argv.of,
   dir:  argv.d,

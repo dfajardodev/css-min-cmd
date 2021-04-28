@@ -42,6 +42,12 @@ npm install -D css-min-cmd
 css-min-cmd <options> <option source> [source] <option output> [output]
 ```
 
+### Another usage:
+
+```
+css-min-cmd <options> <option source> [source] <option output> [output] <option source> [source] <option output> [output]
+```
+
 ## Options
 <br />
 
@@ -74,6 +80,15 @@ css-min-cmd --file ./style.css --out-file ./style.min.css
 css-min-cmd --f ./style.css --of ./style.min.css
 
 css-min-cmd --f style.css --of style.min.css
+```
+
+### Folders recursively with many sources and outputs
+```
+css-min-cmd --log --dir ./src/css/ --out-dir ./dist/css/ --dir ./src/plugins/ --out-dir ./assets/plugins/
+
+css-min-cmd --l --d ./src/css/ --od ./dist/css/ --s ./src/plugins/ --od ./assets/plugins/
+
+css-min-cmd --d src/css/ --od dist/css/ --d ./src/plugins/ --od ./assets/plugins/
 ```
 
 ### Folders recursively
